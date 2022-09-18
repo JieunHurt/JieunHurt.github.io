@@ -11,8 +11,19 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="dist/css/styles.css" rel="stylesheet" />
         <style>
-            img {
+          .image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
   border-radius: 50%;
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
 }
         </style>
     </head>
@@ -33,8 +44,8 @@
         </nav>
         <!-- Page content-->
         <div class="container">
-             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                 <p style="text-align:center;"><img src="assets/IMG_8690.JPG" style="float: center; margin-right: 15px;" width="25%" /> <p>
+             <div class="row gx-4 gx-lg-5 image-cropper"> 
+                <img src="assets/IMG_8690.JPG" style="float: center;" /> 
             </div>
             <div class="text-center mt-5">
                 <h1>Jieun Lee</h1>
